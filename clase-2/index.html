@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<link rel="stylesheet" href="./style.css">
+<title>Clase -2</title>
+</head>
+<body>
+    <h1>Audio y Video </h1>
+   
+    <video controls loop poster="./assets/bosque.jpg" >
+        <source src="./assets/videos/video2.mp4" type="video/mp4"/>
+        <source src="./assets/videos/video2.ogv" type="video/ogv"/>
+    </video>
+    <!-- <audio src="./assets/aves.mp3" controls></audio> -->
+
+    <h2>Barra de reproduccion personalizada</h2>
+    <div class="video2">
+        <video id="videoP" poster="./assets/bosque.jpg">
+             <source src="./assets/videos/video2.mp4" type="video/mp4"/>
+            <source src="./assets/videos/video2.ogv" type="video/ogv"/>
+        </video>
+        <div class="barra-rep">
+            <div class="botonera">
+                <button id="btn-play">PLAY</button>
+                <button id="btn-pause">PAUSA</button>
+                <button id="btn-muted">SONIDO 
+                    <span>ON</span>
+                </button>
+            </div>
+            
+            <p>
+                <span class="tiempoActual"></span>
+                /
+                <span class="duracion"></span>
+            </p>
+            
+        </div>
+    </div>
+
+
+    <script src="./video-audio.js"></script>
+</body>
+</html>
+<!--
+audio y video -> src 
+atributos:
+    controls -> barra de reproduccion predeterminada por cada browser/navegador
+    poster -> imagen de fondo antes de su reproduccion
+    loop -> bucle infinito de reproduccion
+    autoplay -> reproduccion automatica 
+    si usamos el autoplay :evitar el controls para que no lo bloquee el browser - evitar el poster ya que no lo va a reproducir
+
+    
+-->

@@ -1,0 +1,30 @@
+ *{
+    box-sizing: border-box;
+}
+video {
+    width: 500px;
+    display: block;
+
+}
+.video2{
+    margin: 30px 0;
+    border: 2px solid darkgreen;
+    padding: 20px;
+    background-color: cadetblue;
+}
+
+.barra-rep{
+    padding: 20px;
+    background-color: darkslategray;
+    margin-top: 10px;
+    width: 500px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    background-color: cadetblue;
+    border: none;
+}

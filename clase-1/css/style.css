@@ -1,0 +1,53 @@
+/*
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    ....
+}
+
+etiqueta | .nombreClase | #nombreId | [atributo="valor"] | etiquetaPadre>etiquetaHijo
+*/
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    color: lightcoral;
+    background-color: #35091fDD;
+}
+
+nav{
+    border-color: coral;
+    border-style: double;
+    border-width: 2px;
+    background-color: lightskyblue;
+    padding:20px 10px 5px 4px;
+    margin-bottom: 20px;
+    width: 50%;
+    height:50vh ;
+}
+/*
+colores primarios luminosos -> Rojo Verde Azul
+
+hexadecimal : # + 6 digitos -> 0-9 A-F
+
+rgb(red,green,blue) -> rgb(0-255,0-255,0-255)
+
+transparencias : hexadecimal + 2 digitos ; rgba(rojo,verde,azul,0-1)
+0,4 0.4
+
+
+modelo de caja 
+margin
+padding
+border
+
+
+tamaños -> width(ancho)| height(alto)
+*/
