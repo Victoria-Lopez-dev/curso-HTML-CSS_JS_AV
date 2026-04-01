@@ -1,0 +1,32 @@
+svg{
+    border: 2px solid black;
+    width: 500px;
+    height: 400px;
+}
+#rect2{
+    animation: mover 2s 3 alternate;
+}
+
+/* ejemplo de animacion en SVG de manera externa */
+@keyframes mover {
+    from{
+        stroke: blueviolet;
+    }
+    to{
+        transform: rotate(25deg);
+    }
+}
+/* ejemplo de animacion con pseudoclase en SVG de manera externa */
+ellipse:hover{
+    fill: pink;
+    cursor: pointer;
+}
+
+canvas{
+    width: 500px;
+    border: 2px solid black;
+
+}
+body{
+     background-color: lightcoral;
+}

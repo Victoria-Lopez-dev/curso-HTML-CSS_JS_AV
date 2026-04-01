@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase - 5</title>
+</head>
+<body>
+    <h1>Usando SVG</h1>        
+    <img src="./images/profile.svg" alt="">
+    <svg><!-- 500x400-->
+        <rect
+            x="150"
+            y="250"
+            width="200"
+            height="100"
+            fill="pink"
+            rx="10"
+        >
+        </rect>
+        <rect
+            id="rect2"
+            x="100"
+            y="200"
+            width="200"
+            height="100"
+            stroke="#f90"
+            fill="none"
+            stroke-width="20"
+            rx="10"
+        ></rect>
+        <circle
+            cx="500"
+            cy="100"
+            r="80"
+            fill="brown"
+        ></circle>
+        <ellipse
+            cx="300"
+            cy="80"
+            rx="150"
+            ry="50"
+            stroke-width="4"
+            stroke="rgb(100,220,33)"
+            fill="transparent"
+        ></ellipse>
+        <line   
+            x1="0"
+            y1="100"
+            x2="150"
+            y2="60"
+            stroke="black"
+            stroke-width="4"
+        ></line>
+        <polyline
+            points="200 200,280 200,280 100,300 80,400 300,44 70"
+            stroke="blue"
+            stroke-width="4"
+            fill="none"
+        ></polyline>
+        <polygon
+         points="140 140,80 40,80 100,30 80,40 300,44 170"
+          stroke="green"
+            stroke-width="4"
+             fill="gold"
+        ></polygon>
+    </svg>
+
+</body>
+</html>
+<!-- svg 
+
+    formas primitivas - formas geometricas
+    rect - circle-ellipse-line-polyline-polygon
+
+    atributos:
+    x ->eje horizontal
+    y -> eje vertical
+    fill-> color de relleno
+    stroke-> color de contorno
+    stroke-width -> ancho del contorno
+    cx -> punto eje x del centro de la circunferencia
+    cy -> punto eje y del centro de la circunferencia
+    r -> radio de la circuferencia
+    rx -> radio eje x de la elipse 
+    ry ->radio eje y de la elipse 
+    x1,y1-> punto 
+    x2,y2 -> punto
+    points -> conjunto de pares x y separados con una coma que representan puntos continuos
+-->
