@@ -1,37 +1,32 @@
-//API que ya esta incluida en el codigo
-//Geolocalization - Drag&Drop
+//API obtener la ubicacion del dispositivo 
 
-//Geolocalization -> detectar la ubicacion del usuario(siempre que el usuario de su concentimiento)
+//navigator.geolocation
+//getCurrentPosition()
+//watchPosition() -
 
+const fnOk=(position)=>{
+    console.log("se logro la ubicacion")
+    console.log(position);
+    let parrafo=document.querySelector("p")
+    parrafo.textContent=`coordenadas de la ubicacion :${position.coords.latitude} , ${position.coords.longitude} con un margen de error de ${position.coords.accuracy.toFixed(0)} metros `
+};
 
-//navigator.geolocation -> acceder a los metodos de geolocalization
-
-//getCurrentPosition(ok,error,configuracion)
-//watchPosition(ok,error,configuracion) | clearPosition()
-let parrafo=document.querySelector("p")
-
-function functionOk(position) {
-    console.log("se encontro la ubicacion")
-    parrafo.textContent=`El dispositivo se ubica en la latitud ${position.coords.latitude} y longitud ${position.coords.longitude}; con un margen de error de ${position.coords.accuracy} metros`
-}
-
-function functionError(error) {
-    console.log("no se encontro al usuario..")
+const fnError=(error)=>{
+ console.log("NO se logro conseguir la ubicacion")
     console.log(error)
+    let parrafo=document.querySelector("p")
+    
+    if(error.code ==1) parrafo.textContent="Nos es necesario que acepte el poder conseguir su ubicacion para poder continuar..."
+    if(error.code ==3)parrafo.textContent='Ups!no tuvimos tiempo suficiente '
 
-    if(error.code == 1)return parrafo.textContent="Le pedimos que nos permita encontrar su ubicacione para proceder con ciertos pasos..."
-
-    if(error.code == 2)return parrafo.textContent="le pedimos volver a cargar la pagina ya que por imprevistos no pudimos lograr ubicarlo"
-
-    return parrafo.textContent="no tuvimos tiempo suficiente para encontrarlo"
-    //objeto error contiene las propiedades:
-    //code. -> 1-2-3
-    //message -> mensaje indicando el tipo de error
+    if(error.code ==2)parrafo.textContent='Ups!no pudimos encontrarte '
 }
-const objConfig={
-    enableHighAccuracy:true,//booleano -> define una mayor percision
-    timeout:'10ms',//ms -> tiempo limite en la busqueda 
-   // maximumAge:300ms ->tiempo maximo de espera entre solicitudes (ms)
+const objetoConfig={
+    //enableHighAccuracy-> booleano 
+    enableHighAccuracy:true,
+    //timeout -> ms tiempo limite de busqueda
+    timeout:'20ms',
+    //maximumAge -> ms - tiempo en el que tiene que volver a ejecutar el pedido 
 }
 
-navigator.geolocation.getCurrentPosition(functionOk,functionError,objConfig)
+navigator.geolocation.getCurrentPosition(fnOk,fnError,objetoConfig)

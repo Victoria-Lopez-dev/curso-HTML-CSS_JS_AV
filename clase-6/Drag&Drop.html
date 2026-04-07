@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 id="tituloUnico" >Drag and Drop</h1>
+    <h1 id="tituloUnico" draggable="true">Drag and Drop</h1>
     <h2 >Otro titulo</h2>
     <a href="#" >Ancla a algun lado...</a>
-    <div class="zona-destino" >
+    <!-- <div class="zona-destino" ondragenter="funcionDragenter()" ondragleave="funcionDragLeave()" ondragover="dragOverFn(event)" ondrop="dropFn()">
+        arrastar elemento aqui..
+    </div> -->
+        <div class="zona-destino" ondragover="dragOverFn(event)" ondrop="dropFn(event)">
         arrastar elemento aqui..
     </div>
     <button >Enviar..</button>
-    <img id="cohete" src="./imagenes/cohete.jpg" alt="cohete">
+    <img draggable="false" id="cohete" src="./imagenes/cohete.jpg" alt="cohete">
     <script src="./d&d.js"></script>
 </body>
 </html>
