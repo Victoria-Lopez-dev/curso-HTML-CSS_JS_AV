@@ -76,9 +76,6 @@ const dropFn=(e)=>{
         ` 
        }
     }
-
-   
-
 }
 
 //cancelar una accion por defecto -> preventDefault() -> eventos
