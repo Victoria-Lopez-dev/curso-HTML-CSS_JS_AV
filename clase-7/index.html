@@ -6,20 +6,21 @@
   <title>Web Storage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body onload="themeRender()">
   <div class="page-shell">
     <header class="site-header">
-      <div class="brand">ATELIER SOBRIO</div>
+      <h1 class="brand">ATELIER SOBRIO</h1>
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="#collections" class="nav-link active">COLLECTIONS</a>
-        <a href="#living" class="nav-link">LIVING</a>
+        <a href="./hoja2.html" class="nav-link">LISTA PREVIA COMPRA</a>
         <a href="#bedroom" class="nav-link">BEDROOM</a>
       </nav>
       <div class="header-actions">
         <button class="icon-button" aria-label="Cart">
           <img src="./images/canasto.png" alt="">
+          <p id="count">0</p>
         </button>
-        <button class="icon-button icon-button-theme" aria-label="Account">THEME</button>
+        <button id="botonTheme" onclick="theme(this)" class="icon-button icon-button-theme" aria-label="Account">DAY</button>
       </div>
     </header>
 
@@ -39,8 +40,8 @@
             <h3>Silla Living Signature</h3>
             <p>Hand-finished Ash Wood</p>
           </div>
-          <div class="product-price">$2,800</div>
-          <button class="hero-button ">Buy Now</button>
+          <div class="product-price">$3,800</div>
+          <button id="signature" onclick="addProd(this)" class="hero-button ">Buy Now</button>
         </article>
 
         <article class="product-card product-card--light">
@@ -50,7 +51,7 @@
             <p>Vegetable Tanned Leather</p>
           </div>
           <div class="product-price">$2,800</div>
-          <button class="hero-button ">Buy Now</button>
+          <button id="nordic" onclick="addProd(this)" class="hero-button ">Buy Now</button>
         </article>
 
         <article class="product-card product-card--dark">
@@ -62,7 +63,7 @@
             <p>Midnight Velvet</p>
           </div>
           <div class="product-price">$3,100</div>
-          <button class="hero-button ">Buy Now</button>
+          <button id="nocturne" onclick="addProd(this)" class="hero-button ">Buy Now</button>
         </article>
       </section>
 
@@ -98,5 +99,6 @@
       </div>
     </footer>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
