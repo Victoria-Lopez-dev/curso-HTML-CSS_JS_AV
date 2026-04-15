@@ -31,6 +31,9 @@ body {
   background:#3b3a3a;;
   color: #ffffff;
 }
+.night>div>main>section>.product-card--light{
+  background-color: var(--accent-soft);
+}
 img {
   max-width: 100%;
   display: block;
@@ -122,7 +125,7 @@ a {
 }
 
 h1,
-h2,
+h2,button,
 h3,
 footer h4 {
   margin: 0;
@@ -218,8 +221,12 @@ h1 span {
   font-size: 1.1rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  overflow: hidden;
+  margin: auto;
 }
-
+.product-visual>img{
+  height: 100%;
+}
 .visual-signature {
   background: linear-gradient(180deg, #222221 0%, #1c1c1c 100%);
 }
