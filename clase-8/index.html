@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield Creator - Avatar Card Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Personajes de Springfield</div>
+            
+            <div class="navbar-buttons">
+                <a class="btn-create-card" href="#seccion-tarjetas">Crear Tarjetas</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <span class="badge">Usando asincronia</span>
+                <h1 class="hero-title">Asincronia y consumo de API</h1>
+                <p class="hero-description">Armamos este ejemplo para poder consumir una API externa y con el uso de asincronia poder no solo obtener informacion sino tambien utilizarla en nuestro sitio.</p>
+        
+            </div>
+            
+            <div class="hero-right">
+                <div class="hero-card">
+                    <div class="character-image">
+                        <img src="https://cdn.thesimpsonsapi.com/500/character/1.webp" alt="Homero J Simpson">
+                    </div>
+                    <p class="card-name">Homer J Simpson</p>
+                    <p class="card-role">Nuclear Safety Inspector</p>
+                </div>
+                
+                <div class="yellow-circle"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Premium Examples Section -->
+    <section class="premium-examples" id="seccion-tarjetas">
+        <h2 class="section-title" >Tarjetas</h2>
+        <p class="section-subtitle">Tarjetas con la informacion de los personajes.</p> 
+        <button class="btn-create-card mb">obtener personajes</button>       
+        <div class="examples-grid">
+            <div class="example-card ">
+                <div class="card-label">HOMER-J</div>
+                <div class="example-image">
+                   <img src="https://cdn.thesimpsonsapi.com/500/character/1.webp" alt="Homero J Simpson">
+                </div>
+                <div class="card-info">
+                    <p class="tag">Age:39</p>
+                    <p class="tag">Occupation: Safety Inspector</p>
+                </div>
+                <div class="card-stats">ALIVE</div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Personajes de Springfield</h3>
+            </div>
+            
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Personajes de Springfield. Projecto Academico</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
