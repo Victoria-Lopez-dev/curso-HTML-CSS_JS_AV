@@ -94,7 +94,7 @@ const cargarPersonajes=async()=>{
                             </div>
                             <div class="card-info">
                                 <p class="tag">Age:${pers.age}</p>
-                                <p class="tag">Occupation:${pers.occupation}</p>
+                                <p class="tag">${pers.occupation}</p>
                             </div>
                         <div class="card-stats">${pers.status}</div>
         `
