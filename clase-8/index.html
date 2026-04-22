@@ -10,7 +10,7 @@
     <!-- Header/Navbar -->
     <header class="navbar">
         <div class="navbar-container">
-            <div class="logo">Personajes de Springfield</div>
+            <button id="alerta" class="logo">Personajes de Springfield</button>
             
             <div class="navbar-buttons">
                 <a class="btn-create-card" href="#seccion-tarjetas">Crear Tarjetas</a>
@@ -43,12 +43,13 @@
     </section>
 
 
-    <!-- Premium Examples Section -->
+    <!-- Tarjetas -->
     <section class="premium-examples" id="seccion-tarjetas">
         <h2 class="section-title" >Tarjetas</h2>
         <p class="section-subtitle">Tarjetas con la informacion de los personajes.</p> 
-        <button class="btn-create-card mb">obtener personajes</button>       
+        <button class="btn-create-card mb" onclick="cargarPersonajes()">obtener personajes</button>       
         <div class="examples-grid">
+            <!-- tarjeta modelo
             <div class="example-card ">
                 <div class="card-label">HOMER-J</div>
                 <div class="example-image">
@@ -60,7 +61,7 @@
                 </div>
                 <div class="card-stats">ALIVE</div>
             </div>
-            
+            -->
 
         </div>
     </section>
@@ -78,6 +79,7 @@
             <p>&copy; 2026 Personajes de Springfield. Projecto Academico</p>
         </div>
     </footer>
+
     <script src="./script.js"></script>
 </body>
 </html>
